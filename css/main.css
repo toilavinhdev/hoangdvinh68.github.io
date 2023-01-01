@@ -18,6 +18,11 @@
     --shadow: 0 0 12px black;
 }
 
+*::selection {
+    color: var(--text-color);
+    background-color: var(--main-color);
+}
+
 body {
     background-color: var(--bg-color);
 }
@@ -376,12 +381,44 @@ button {
     }
 }
 
+/* ====== Service ====== */
+.service {
+    cursor: pointer;
+}
+
+.service-item {
+    margin: 40px 0;
+
+}
+
+.service-icon {
+    color: var(--main-color);
+    font-size: 40px;
+    margin-bottom: 16px;
+}
+
+.service:hover .service-icon {
+    scale: 1.4;
+    transform: translateY(-20px);
+}
+
+.service h2 {
+    color: var(--text-color);
+}
+
+.service p {
+    opacity: 0.8;
+    color: var(--text-color);
+}
+
+@media (max-width: 740px) {
+    .section-service {
+        margin: 0 30px;
+    }
+}
+
 
 /* ===== Subscribes ===== */
-
-/* .section-subscribes {
-    background-image: url(/img/subs1.jpg);
-} */
 
 .form-subs {
     display: flex;
@@ -390,8 +427,8 @@ button {
     justify-content: center;
 
     height: 400px;
-    background-image: url(/img/f.webp);
-    background-position: top center;
+    background-image: url(/img/subs0.webp);
+    background-position: left center;
     background-size: contain;
     
 }
@@ -416,7 +453,7 @@ button {
 
 @media (max-width: 740px) {
     .section-subscribes {
-        margin: 150px 30px;
+        margin: 60px 30px;
     }
 
     #subs-mail {

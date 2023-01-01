@@ -28,10 +28,10 @@ github.user: hoangdvinh68.github.io
                 <a href="index.html"><h1>HUCE Books</h1></a>  
             </div>
             <ul class="header-nav">
-                <li><a href="index.html/#home">Trang chủ</a></li>
-                <li><a href="#about">Giới thiệu</a></li>
-                <li><a href="#featured">Sản phẩm</a></li>
-                <li><a href="#contacts">Contact</a></li>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="index.html">Giới thiệu</a></li>
+                <li><a href="index.html">Sản phẩm</a></li>
+                <li><a href="index.html">Contact</a></li>
             </ul>
             <div class="header-nav-more">
                 <i class="fa-solid fa-bars"></i>
@@ -70,7 +70,7 @@ github.user: hoangdvinh68.github.io
                 <span id="total" style="color: #ff702a">0</span>
                 ₫
             </div>
-            <div style="display:flex">
+            <div style="display:flex;">
                 <div class="cart-cartactions text-center">Xem giỏ hàng</div>
                 <div class="cart-cartactions text-center">Thanh toán</div>
             </div>
@@ -413,8 +413,7 @@ github.user: hoangdvinh68.github.io
                 
 
 
-            
-
+    
                 <!-- ===== Pagination ===== -->
                 <div class="pagination-product">
                 <ul>
@@ -448,19 +447,23 @@ github.user: hoangdvinh68.github.io
      <!-- ==== Sign In ====  -->
      <div class="modal-z10" id="modal-signin">
         <div class="modal-container">
-            <form action="">
-                <h1 class="text-center">Sign In</h1>
-                <p> </p>
-                <label for="username" class="text-center">User Name:</label> <br>
-                <input type="text" placeholder="Enter your user name" name="username" id="username">
-                <br>
-                <label for="password">Password:</label>
-                <br>
-                <input type="text" placeholder="Enter your password" name="password" id="password" value="">
-                <br>
-                <button type="submit" onclick="return validate()" name="btn_submit" id="btn-submit">Sign in</button>
-                <a href="#">Forgot Password?</a>
-                <a href="#" id="btn-create">Create Account.</a>
+            <form action="" id="signin">
+                <h1 class="text-center">Sign in</h1>
+                <div class="input-control">
+                    <label for="username">Tên đăng nhập:</label>
+                    <input type="text" placeholder="Enter your user name" name="username" id="username">
+                    <small class="error-message"></small>
+                </div>
+
+                <div class="input-control">
+                    <label for="password">Mật khẩu:</label>
+                    <input type="password" placeholder="Enter your password" name="password" id="password">
+                    <small class="error-message"></small>
+                </div>
+
+                <button type="submit" name="btn_submit" id="btn-submit">Sign in</button>
+                <a href="#">Quên mật khẩu?</a>
+                <a href="#" id="btn-create">Đăng kí tài khoản mới.</a>
             </form>
 
             <div class="modal-close">
@@ -471,20 +474,28 @@ github.user: hoangdvinh68.github.io
     <!-- ==== Register ====  -->
     <div class="modal-z10" id="modal-register">
         <div class="modal-container">
-            <form action="">
-                <h1 class="text-center">
-                    Register An Account</h1>
-                <label for="username" class="text-center">User Name:</label> <br>
-                <input type="text" placeholder="Enter your user name" name="username">
-                <br>
-                <label for="password">Password:</label>
-                <br>
-                <input type="text" placeholder="Enter your password" name="password">
-                <br>
-                <label for="password">Enter the password again</label>
-                <br>
-                <input type="text" placeholder="Enter the password" name="repassword">
-                <br>
+            <form action="" id="resgister">
+                <h1 class="text-center">Register</h1>
+                <div class="input-control">
+                    <label for="username">Tên đăng nhập:</label>
+                    <input id="username2" type="text" placeholder="Enter your user name" name="username">
+                    <small class="error-message"></small>
+                </div>
+                <div class="input-control">
+                    <label for="email">Email:</label> 
+                    <input id="email" type="email" placeholder="Enter your email" name="email">
+                    <small class="error-message"></small>
+                </div>
+                <div class="input-control">
+                    <label for="password">Mật khẩu:</label>
+                    <input id="password2" type="password" placeholder="Enter your password" name="password">
+                    <small class="error-message"></small>
+                </div>
+                <div class="input-control">
+                    <label for="password2">Nhập lại mật khẩu</label>
+                    <input id="cfpassword2" type="password" placeholder="Confirm Your Password" name="password2">
+                    <small class="error-message"></small>
+                </div>
                 <button type="submit">Register</button>
             </form>
 
