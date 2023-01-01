@@ -1,0 +1,565 @@
+<!-- 
+github.name: Hoang Dinh Vinh
+github.user: hoangdvinh68.github.io 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ==== Main CSS ==== -->
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/product.css">
+    <!-- ==== Google Font ==== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
+    <title>HUCE Books</title>
+    <link rel='shortcut icon' href='img/icon.png'/>
+</head>
+<body>
+    <div class="main">
+        <!-- ====== Header ====== -->
+        <div class="header">
+            <div class="header-logo">
+                <a href="index.html"><h1>HUCE Books</h1></a>  
+            </div>
+            <ul class="header-nav">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="index.html">Giới thiệu</a></li>
+                <li><a href="index.html">Sản phẩm</a></li>
+                <li><a href="index.html">Contact</a></li>
+            </ul>
+            <div class="header-nav-more">
+                <i class="fa-solid fa-bars"></i>
+                <div class="header-nav-more-close"></div>
+            </div>
+        </div>
+        <div class="header-2">
+            <div class="search-nav">
+                <label for="search-nav">Search</label>
+                <input type="text" placeholder="enter name book..." name="search-nav">
+                <i class="fa-solid fa-xmark" id="close-search"></i>
+            </div>
+            <ul class="header-nav-2">
+                <li><a style="cursor: pointer;"><i class="fa-solid fa-magnifying-glass" id="btn-search"></i></a></li>
+                <li><a style="cursor: pointer;" id="btn-users"><i class="fa-solid fa-user"></i></a></li>
+                <li id="btn-notice"><a style="cursor: pointer;"><i class="fa-solid fa-bell"></i></a></li>
+                <li id="btn-fav-header">
+                    <a style="cursor: pointer;"><i class="fa-solid fa-heart"></i></a>
+                </li>
+                <li id="btn-cart-header">
+                    <a style="cursor: pointer;"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <div class="quantity-cart text-center">
+                        <span id="quantity">0</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- ====== Cart ===== -->
+        <div class="cart-container">
+            <i class="close-cart fa-solid fa-xmark"></i>
+            <p class="text-center cart-heading">Giỏ hàng của tôi</p>
+            <div id="cart-products">
+                <div></div>
+            </div>
+            <div class="cart-total">Tạm tính:
+                <span id="total" style="color: #ff702a">0</span>
+                ₫
+            </div>
+            <div style="display:flex;">
+                <div class="cart-cartactions text-center">Xem giỏ hàng</div>
+                <div class="cart-cartactions text-center">Thanh toán</div>
+            </div>
+        </div>
+        <!-- ===== Favourite ==== -->
+        <div class="fav-container ">
+            <p class="text-center cart-heading">Sản phẩm yêu thích</p>
+            <div class="fav-products">
+                <div class="l-3 m-4 c-5">
+                    <div class="fav-item" style="background-image: url(img/product/conan1.jpg);"></div>
+                </div>
+
+                <div class="l-3 m-4 c-5">
+                    <div class="fav-item" style="background-image: url(img/product/conan1.jpg);"></div>
+                </div>
+
+                <div class="l-3 m-4 c-5">
+                    <div class="fav-item" style="background-image: url(img/product/conan1.jpg);"></div>
+                </div>
+
+                <div class="l-3 m-4 c-5">
+                    <div class="fav-item" style="background-image: url(img/product/conan1.jpg);"></div>
+                </div>
+
+                <div class="l-3">
+                    <div class="fav-item" style="background-image: url(img/product/conan1.jpg);"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== Thong bao =====  -->
+        <div class="cart-container" id="notice-container">
+            <i class="close-cart fa-solid fa-xmark"></i>
+            <p class="text-center cart-heading">Thông báo</p>
+            <p class="text-center" style="margin-top: 20%;">Bạn chưa có thông báo nào.</p>
+            <div id="cart-products">
+                <div></div>
+            </div>
+            
+        </div>
+
+        <!-- ================== CONTENT ================== -->
+        <div class="row grid wide main-content">
+            <!-- ===== Slide ====  -->
+            <div class="section-slide">
+                <div class="slide-item">
+                    <img src="/img/slide/slide-1.webp" alt="">
+                </div>
+                <div class="slide-item">
+                    <img src="/img/slide/slide-2.webp" alt="">
+                </div>
+                <div class="slide-item">
+                    <img src="/img/slide/slide-3.webp" alt="">
+                </div>
+            </div>
+
+            <!-- ===== SideBar ===== -->
+            <div class="l-3 m-3 c-12 sidebar">
+                <div class="sidebar-item">
+                    <h3>Danh mục sản phẩm</h3>
+                    <ul class="sidebar-category">
+                        <li><a href="">Tất cả sản phẩm</a></li>
+                        <li><a href="">Lịch sử truyền thống</a></li>
+                        <li><a href="">Sách công cụ đoàn hội</a></li>
+                        <li><a href="">Kiến thức khoa học</a></li>
+                        <li><a href="">Văn học Việt Nam</a></li>
+                        <li><a href="">Văn học nước ngoài</a></li>
+                        <li><a href="">Truyện tranh</a></li>
+                        <li><a href="">Manga - Comic</a></li>
+                        <li><a href="">Sách theo độ tuổi</a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-item">
+                    <h3>Khoảng giá</h3>
+                    <ul class="sidebar-price">
+                        <li><input type="checkbox">Tất cả</li>
+                        <li><input type="checkbox">Nhỏ hơn 50,000₫</li>
+                        <li><input type="checkbox">Từ 50,000 đến 100,000₫</li>
+                        <li><input type="checkbox">Từ 100,000 đến 200,000₫</li>
+                        <li><input type="checkbox">Từ 300,000 đến 400,000₫</li>
+                        <li><input type="checkbox">Lớn hơn 400,000₫</li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-item">
+                    <h3>Tác giả</h3>
+                    <ul class="sidebar-author">
+                        <li><input type="checkbox">Khác</li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-item">
+                    <h3>Thể loại</h3>
+                    <ul class="sidebar-more">
+                        <li><input type="checkbox">Đang giảm giá</li>
+                        <li><input type="checkbox">Sách mới</li>
+                        <li><input type="checkbox">Được yêu thích</li>
+                        <li><input type="checkbox">Sách bán chạy</li>
+                        <li><input type="checkbox">Combo sách</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- ======= Product ====== -->
+            <div class="l-9 m-9 c-12 main-product">
+                <div class="product-head">
+                    <h3>Tất cả sản phẩm</h3>
+                    <div>
+                        <p>Sắp xếp</p>
+                        <select name="slect-product" id="">
+                            <option value="">Tùy chọn</option>
+                            <option value="">Bán chạy nhất</option>
+                            <option value="">Tên A-Z</option>
+                            <option value="">Tên Z-A</option>
+                            <option value="">Tên Z-A</option>
+                            <option value="">Mới nhất</option>
+                            <option value="">Cũ nhất</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row product-content">                
+                    <div class="col l-3 m-4 c-6">
+                        <div class="product-item">
+                            <div class="product-img" style="background-image: url(/img/product/conan1.jpg);"></div>
+                            <div class="product-infor">
+                                <a href="" class="product-name">Thám tử lừng danh Conan và Tổ chức áo đen</a>
+                                <p class="product-price-sale"><span>67.500</span>₫</p>
+                                <p class="product-price-old">75.000₫</p>
+                            </div>
+
+                            <button class="fav product-favourite text-center" onclick="add_fav(this)"><i class="fa-regular fa-heart"></i></button>
+                            <button class="unfav product-favourite text-center" onclick="clear_fav(this)"><i class="fa-solid fa-heart"></i></button> 
+                            <button class="product-addtocart" onclick="add_to_cart(this)">Thêm vào giỏ hàng</button>
+
+                            <div class="product-discount"><p class="text-center">-10%</p></div>
+                        </div>
+                    </div>
+                    
+                    <div class="col l-3 m-4 c-6">
+                        <div class="product-item">
+                            <div class="product-img" style="background-image: url(/img/product/pokemon1.webp);"><a href=""></a></div>
+                            <div class="product-infor">
+                                <a href="" class="product-name">Pokemon - Cuộc phiêu lưu của Pippi</a>
+                                <p class="product-price-sale"> <span>74.800</span>₫</p>
+                                <p class="product-price-old">88,000₫</p>
+                            </div>
+                            <button class="fav product-favourite text-center" onclick="add_fav(this)"><i class="fa-regular fa-heart"></i></button>
+                            <button class="unfav product-favourite text-center" onclick="clear_fav(this)"><i class="fa-solid fa-heart"></i></button> 
+                            <button class="product-addtocart" onclick="add_to_cart(this)">Thêm vào giỏ hàng</button>
+                            <div class="product-discount"><p class="text-center">-15%</p></div>
+                        </div>
+                    </div>
+                
+                    <div class="col l-3 m-4 c-6">
+                        <div class="product-item">
+                            <div class="product-img" style="background-image: url(/img/product/bupsenxanh.webp);"><a href=""></a></div>
+                            <div class="product-infor">
+                                <a href="" class="product-name">Búp sen xanh</a>
+                                <p class="product-price-sale"><span>126.000</span>₫</p>
+                                <p class="product-price-old">140,000₫</p>
+                            </div>
+                            <button class="fav product-favourite text-center" onclick="add_fav(this)"><i class="fa-regular fa-heart"></i></button>
+                            <button class="unfav product-favourite text-center" onclick="clear_fav(this)"><i class="fa-solid fa-heart"></i></button> 
+                            <button class="product-addtocart" onclick="add_to_cart(this)">Thêm vào giỏ hàng</button>
+                            <div class="product-discount"><p class="text-center">-10%</p></div>
+                        </div>
+                    </div>
+
+                    <div class="col l-3 m-4 c-6">
+                        <div class="product-item">
+                            <div class="product-img" style="background-image: url(/img/product/trethongminh.webp);"></div>
+                            <div class="product-infor">
+                                <a href="" class="product-name">90% trẻ thông minh nhờ cách trò chuyện đúng cách của cha mẹ</a>
+                                <p class="product-price-sale"><span>48.000</span> ₫</p>
+                                <p class="product-price-old">60.000₫</p>
+                            </div>
+                            <button class="fav product-favourite text-center" onclick="add_fav(this)"><i class="fa-regular fa-heart"></i></button>
+                            <button class="unfav product-favourite text-center" onclick="clear_fav(this)"><i class="fa-solid fa-heart"></i></button> 
+                            <button class="product-addtocart" onclick="add_to_cart(this)">Thêm vào giỏ hàng</button>
+                            <div class="product-discount"><p class="text-center">-15%</p></div>
+                        </div>
+                    </div>
+                
+                    <div class="col l-3 m-4 c-6">
+                        <div class="product-item">
+                            <div class="product-img" style="background-image: url(/img/product/tp-mat-connguoi.webp);"><a href=""></a></div>
+                            <div class="product-infor">
+                                <a href="" class="product-name">Thành phố, gương mặt, con người</a>
+                                <p class="product-price-sale"><span>63.000</span>₫</p>
+                                <p class="product-price-old">70.000₫</p>
+                            </div>
+                            <button class="fav product-favourite text-center" onclick="add_fav(this)"><i class="fa-regular fa-heart"></i></button>
+                            <button class="unfav product-favourite text-center" onclick="clear_fav(this)"><i class="fa-solid fa-heart"></i></button> 
+                            <button class="product-addtocart" onclick="add_to_cart(this)">Thêm vào giỏ hàng</button>
+                            <div class="product-discount"><p class="text-center">-15%</p></div>
+                        </div>
+                    </div>
+
+                    <div class="col l-3 m-4 c-6">
+                        <div class="col-4 product-item">
+                            <div class="product-img" style="background-image: url(/img/product/hachiko.jpg);"><a href=""></a></div>
+                            <div class="product-infor">
+                                <a href="" class="product-name">Hachiko - chú chó đợi chờ</a>
+                                <p class="product-price-sale"><span>54.000</span>₫</p>
+                                <p class="product-price-old">60.000₫</p>
+                            </div>
+                            <button class="fav product-favourite text-center" onclick="add_fav(this)"><i class="fa-regular fa-heart"></i></button>
+                            <button class="unfav product-favourite text-center" onclick="clear_fav(this)"><i class="fa-solid fa-heart"></i></button> 
+                            <button class="product-addtocart" onclick="add_to_cart(this)">Thêm vào giỏ hàng</button>
+                            <div class="product-discount"><p class="text-center">-10%</p></div>
+                        </div> 
+                    </div>
+
+                    
+                    <div class="col l-3 m-4 c-6">
+                        <div class="product-item">
+                            <div class="product-img" style="background-image: url(/img/product/giacmo-bo-carot.webp);"></div>
+                            <div class="product-infor">
+                                <a href="" class="product-name">Truyện kể trước giờ đi ngủ - Giấc mơ Bơ Cà rốt</a>
+                                <p class="product-price-sale"><span>59.400</span>₫</p>
+                                <p class="product-price-old">66.000₫</p>
+                            </div>
+                            <button class="fav product-favourite text-center" onclick="add_fav(this)"><i class="fa-regular fa-heart"></i></button>
+                            <button class="unfav product-favourite text-center" onclick="clear_fav(this)"><i class="fa-solid fa-heart"></i></button> 
+                            <button class="product-addtocart" onclick="add_to_cart(this)">Thêm vào giỏ hàng</button>
+                            <div class="product-discount"><p class="text-center">-10%</p></div>
+                        </div>
+                    </div>
+
+                    <div class="col l-3 m-4 c-6">
+                        <div class="product-item">
+                            <div class="product-img" style="background-image: url(/img/product/neumotngaychungtobienmat.jpg);"><a href=""></a></div>
+                            <div class="product-infor">
+                                <a href="" class="product-name">Tủ sách tuổi thần tiên - Nếu một ngày chúng tớ biến mất</a>
+                                <p class="product-price-sale"><span>81.500</span>₫</p>
+                                <p class="product-price-old">96.000₫</p>
+                            </div>
+                            <button class="fav product-favourite text-center" onclick="add_fav(this)"><i class="fa-regular fa-heart"></i></button>
+                            <button class="unfav product-favourite text-center" onclick="clear_fav(this)"><i class="fa-solid fa-heart"></i></button> 
+                            <button class="product-addtocart" onclick="add_to_cart(this)">Thêm vào giỏ hàng</button>
+                            <div class="product-discount"><p class="text-center">-15%</p></div>
+                        </div>
+                    </div>
+
+                    <div class="col l-3 m-4 c-6">
+                        <div class="product-item">
+                            <div class="product-img" style="background-image: url(/img/product/truyenkieu.jpg);"><a href=""></a></div>
+                            <div class="product-infor">
+                                <a href="" class="product-name">Truyện Kiều</a>
+                                <p class="product-price-sale"><span>28.000</span>₫</p>
+                                <p class="product-price-old">40.000₫</p>
+                            </div>
+                            <button class="fav product-favourite text-center" onclick="add_fav(this)"><i class="fa-regular fa-heart"></i></button>
+                            <button class="unfav product-favourite text-center" onclick="clear_fav(this)"><i class="fa-solid fa-heart"></i></button> 
+                            <button class="product-addtocart" onclick="add_to_cart(this)">Thêm vào giỏ hàng</button>
+                            <div class="product-discount"><p class="text-center">-30%</p></div>
+                        </div>
+                    </div>
+
+                    <div class="col l-3 m-4 c-6">
+                        <div class="product-item">
+                            <div class="product-img" style="background-image: url(/img/product/motmanhtrang.webp);"><a href=""></a></div>
+                            <div class="product-infor">
+                                <a href="" class="product-name">Một mảnh trăng</a>
+                                <p class="product-price-sale"><span>63.000</span> ₫</p>
+                                <p class="product-price-old">129.000₫</p>
+                            </div>
+                            <button class="fav product-favourite text-center" onclick="add_fav(this)"><i class="fa-regular fa-heart"></i></button>
+                            <button class="unfav product-favourite text-center" onclick="clear_fav(this)"><i class="fa-solid fa-heart"></i></button> 
+                            <button class="product-addtocart" onclick="add_to_cart(this)">Thêm vào giỏ hàng</button>
+                            <div class="product-discount"><p class="text-center">-51%</p></div>
+                        </div>
+                    </div>
+
+                    <div class="col l-3 m-4 c-6">
+                        <div class="product-item">
+                            <div class="product-img" style="background-image: url(/img/product/camnangphongtranhthientai.webp);"></div>
+                            <div class="product-infor">
+                                <a href="" class="product-name">15 bí kíp giúp tớ an toàn - Cẩm nang phòng tránh thiên tai</a>
+                                <p class="product-price-sale"><span>58.500</span>₫</p>
+                                <p class="product-price-old">65.000₫</p>
+                            </div>
+                            <button class="fav product-favourite text-center" onclick="add_fav(this)"><i class="fa-regular fa-heart"></i></button>
+                            <button class="unfav product-favourite text-center" onclick="clear_fav(this)"><i class="fa-solid fa-heart"></i></button> 
+                            <button class="product-addtocart" onclick="add_to_cart(this)">Thêm vào giỏ hàng</button>
+                            <div class="product-discount"><p class="text-center">-10%</p></div>
+                        </div>
+                    </div>
+
+                    <div class="col l-3 m-4 c-6">
+                        <div class="product-item">
+                            <div class="product-img" style="background-image: url(/img/product/chungtaybvmt.jpg);"><a href=""></a></div>
+                            <div class="product-infor">
+                                <a href="" class="product-name">Tớ là công dân toàn cầu - Chung tay bảo vệ môi trường</a>
+                                <p class="product-price-sale"><span>31.500</span>₫</p>
+                                <p class="product-price-old">35.000₫</p>
+                            </div>
+                            <button class="fav product-favourite text-center" onclick="add_fav(this)"><i class="fa-regular fa-heart"></i></button>
+                            <button class="unfav product-favourite text-center" onclick="clear_fav(this)"><i class="fa-solid fa-heart"></i></button> 
+                            <button class="product-addtocart" onclick="add_to_cart(this)">Thêm vào giỏ hàng</button>
+                            <div class="product-discount"><p class="text-center">-15%</p></div>
+                        </div>
+                    </div>
+
+                    <div class="col l-3 m-4 c-6">
+                        <div class="col-4 product-item">
+                            <div class="product-img" style="background-image: url(/img/product/thanhguomdietwuy.jpg);"><a href=""></a></div>
+                            <div class="product-infor">
+                                <a href="" class="product-name">Tiểu thuyết thanh gươm diệt quỷ - Tình anh em và đội diệt quỷ</a>
+                                <p class="product-price-sale"><span>49.500</span>₫</p>
+                                <p class="product-price-old">55.000₫</p>
+                            </div>
+                            <button class="fav product-favourite text-center" onclick="add_fav(this)"><i class="fa-regular fa-heart"></i></button>
+                            <button class="unfav product-favourite text-center" onclick="clear_fav(this)"><i class="fa-solid fa-heart"></i></button> 
+                            <button class="product-addtocart" onclick="add_to_cart(this)">Thêm vào giỏ hàng</button>
+                            <div class="product-discount"><p class="text-center">-10%</p></div>
+                        </div>
+                    </div>
+
+                    <div class="col l-3 m-4 c-6">
+                        <div class="product-item">
+                            <div class="product-img" style="background-image: url(/img/product/songnhunhungdoahoa2.jpg);"><a href=""></a></div>
+                            <div class="product-infor">
+                                <a href="" class="product-name">Sống như những đóa hoa - Tập 2</a>
+                                <p class="product-price-sale"><span>20.000</span>₫</p>
+                                <p class="product-price-old">40.000₫</p>
+                            </div>
+                            <button class="fav product-favourite text-center" onclick="add_fav(this)"><i class="fa-regular fa-heart"></i></button>
+                            <button class="unfav product-favourite text-center" onclick="clear_fav(this)"><i class="fa-solid fa-heart"></i></button> 
+                            <button class="product-addtocart" onclick="add_to_cart(this)">Thêm vào giỏ hàng</button>
+                            <div class="product-discount"><p class="text-center">-50%</p></div>
+                        </div>
+                    </div>
+                    
+                <!-- Ket thuc product -->
+                </div>
+
+                
+
+
+    
+                <!-- ===== Pagination ===== -->
+                <div class="pagination-product">
+                <ul>
+                    <li><a href="#">1</a></li>
+                </ul>
+                </div>
+            <!-- -ket thuc main product- -->
+            </div>
+            
+        <!-- Ket thuc Main Content -->
+        </div>
+        
+
+
+
+    <!-- ==== NAV Mobile ====  -->
+    <div class="modal-z10 nav-more">
+        <div class="container-nav-more text-center">
+            <ul>
+                <li><a href="#home">Trang chủ</a>
+                <li><a href="#about">Giới thiệu</a></li>
+                <li><a href="#featured">Sản phẩm</a></li>
+                <li><a href="#contacts">Contact</a></li>
+            </ul>
+            <div class="close-nav-more">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+    </div>
+
+     <!-- ==== Sign In ====  -->
+     <div class="modal-z10" id="modal-signin">
+        <div class="modal-container">
+            <form action="" id="signin">
+                <h1 class="text-center">Sign in</h1>
+                <div class="input-control">
+                    <label for="username">Tên đăng nhập:</label>
+                    <input type="text" placeholder="Enter your user name" name="username" id="username">
+                    <small class="error-message"></small>
+                </div>
+
+                <div class="input-control">
+                    <label for="password">Mật khẩu:</label>
+                    <input type="password" placeholder="Enter your password" name="password" id="password">
+                    <small class="error-message"></small>
+                </div>
+
+                <button type="submit" name="btn_submit" id="btn-submit">Sign in</button>
+                <a href="#">Quên mật khẩu?</a>
+                <a href="#" id="btn-create">Đăng kí tài khoản mới.</a>
+            </form>
+
+            <div class="modal-close">
+                <i class="fa-solid fa-xmark" id="modal-close"></i>
+            </div>
+        </div>
+    </div>
+    <!-- ==== Register ====  -->
+    <div class="modal-z10" id="modal-register">
+        <div class="modal-container">
+            <form action="" id="resgister">
+                <h1 class="text-center">Register</h1>
+                <div class="input-control">
+                    <label for="username">Tên đăng nhập:</label>
+                    <input id="username2" type="text" placeholder="Enter your user name" name="username">
+                    <small class="error-message"></small>
+                </div>
+                <div class="input-control">
+                    <label for="email">Email:</label> 
+                    <input id="email" type="email" placeholder="Enter your email" name="email">
+                    <small class="error-message"></small>
+                </div>
+                <div class="input-control">
+                    <label for="password">Mật khẩu:</label>
+                    <input id="password2" type="password" placeholder="Enter your password" name="password">
+                    <small class="error-message"></small>
+                </div>
+                <div class="input-control">
+                    <label for="password2">Nhập lại mật khẩu</label>
+                    <input id="cfpassword2" type="password" placeholder="Confirm Your Password" name="password2">
+                    <small class="error-message"></small>
+                </div>
+                <button type="submit">Register</button>
+            </form>
+
+            <div class="modal-close">
+                <i class="fa-solid fa-xmark" id="modal-close"></i>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Popup -->
+    <div class="popup-container">
+        <div class="popup">
+                <i class="fa-solid fa-circle-check"></i>
+                <p>Thêm vào giỏ hàng thành công</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==== Footer ===== -->
+    <div class="grid wide row footer" id="contacts">
+        <ul class="l-3 m-6 c-12 footer-item">
+            <h3 class="footer-item-heading">Dịch vụ</h3>
+            <li><a href="">Điều khoản sử dụng</a></li>
+            <li><a href="">Chính sách bảo mật</a></li>
+            <li><a href="">Liên hệ</a></li>
+            <li><a href="">Hệ thống nhà sách</a></li>
+            <li><a href="">Tra cứu đơn hàng</a></li>
+        </ul>
+        <ul class="l-3 m-6 c-12 footer-item">
+            <li><h3 class="footer-item-heading">Hỗ trợ</h3></li>
+            <li><a href="">Hướng dẫn đặt hàng</a></li>
+            <li><a href="">Chính sách đổi trả - hoàn tiền</a></li>
+            <li><a href="">Phương thức vận chuyển</a></li>
+            <li><a href="">Phương thức thanh toán</a></li>
+            <li><a href="">Chính sách khách hàng mua sỉ</a></li>
+            <li><a href="">Chính sách khách hàng cho trường học</a></li>
+        </ul>
+        <ul class="l-3 m-6 c-12 footer-item">
+            <li><h3 class="footer-item-heading">Hệ thống nhà sách</h3></li>
+            <li><a href="">Giám đốc: Hoàng Đình Vinh</a></li>
+            <li><a href="">Địa chỉ: Số 55 Giải Phóng, Đồng Tâm, Hai Bà Trưng, Hà Nội</a></li>
+            <li><a href="">Số điện thoại: (+84) 19001234</a></li>
+            <li><a href="">Email: vinh0222066@nuce.edu.vn</a></li>
+        </ul>
+
+        <ul class="l-3 m-6 c-12 footer-item">
+            <li><h3 class="footer-item-heading">Kết nối mạng xã hội</h3></li>
+            <li><a href=""><i class="fa-brands fa-facebook"></i>HUCE Books</a></li>
+            <li><a href=""><i class="fa-brands fa-youtube"></i>Our Books</a></li>
+            <li><a href=""><i class="fa-brands fa-instagram"></i>@ourbooks_2022</a></li>
+            <li><a href=""><i class="fa-brands fa-tiktok"></i>We love reading Books</a></li>
+        </ul>
+    <!-- Ket thuc Footer -->
+    </div>
+    <p class="text-center footer-ending">COPYRIGHTS © 2022 BY 66CS1</p>
+
+
+    <!-- ==== Font awesome ==== -->
+    <script src="https://kit.fontawesome.com/171c3230ad.js" crossorigin="anonymous"></script>
+    <!-- ==== Main JS ==== -->
+    <script src="/js/main.js"></script>
+    <script src="js/slide.js"></script>
+    <script src="js/user.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>
