@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ==== Main CSS ==== -->
+    <link rel="stylesheet" href="/css/grid.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/product.css">
+    <link rel="stylesheet" href="/css/infor.css">
+    <!-- ==== Google Font ==== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
+    <title>Thám tử lừng danh Conan và Tổ chức áo đen 3</title>
+    <link rel='shortcut icon' href='/img/icon.png'/>
+</head>
+<body>
+    <div class="main">
+        <!-- ====== Header ====== -->
+        <div class="header">
+            <div class="header-logo">
+                <a href="/index.html"><h1>HUCE Books</h1></a>  
+            </div>
+            <ul class="header-nav">
+                <li><a href="/index.html">Trang chủ</a></li>
+                <li><a href="/index.html">Giới thiệu</a></li>
+                <li><a href="/index.html">Sản phẩm</a></li>
+                <li><a href="/index.html">Contact</a></li>
+            </ul>
+            <div class="header-nav-more">
+                <i class="fa-solid fa-bars"></i>
+                <div class="header-nav-more-close"></div>
+            </div>
+        </div>
+        <div class="header-2">
+            <div class="search-nav">
+                <label for="search-nav">Search</label>
+                <input type="text" placeholder="enter name book..." name="search-nav">
+                <i class="fa-solid fa-xmark" id="close-search"></i>
+            </div>
+            <ul class="header-nav-2">
+                <li><a style="cursor: pointer;"><i class="fa-solid fa-magnifying-glass" id="btn-search"></i></a></li>
+                <li><a style="cursor: pointer;" id="btn-users"><i class="fa-solid fa-user"></i></a></li>
+                <li id="btn-notice"><a style="cursor: pointer;"><i class="fa-solid fa-bell"></i></a></li>
+                <li id="btn-fav-header">
+                    <a style="cursor: pointer;"><i class="fa-solid fa-heart"></i></a>
+                </li>
+                <li id="btn-cart-header">
+                    <a style="cursor: pointer;"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <div class="quantity-cart text-center">
+                        <span id="quantity">0</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- ====== Cart ===== -->
+        <div class="cart-container">
+            <i class="close-cart fa-solid fa-xmark"></i>
+            <p class="text-center cart-heading">Giỏ hàng của tôi</p>
+            <div id="cart-products">
+                <div></div>
+            </div>
+            <div class="cart-total">Tạm tính:
+                <span id="total" style="color: #ff702a">0</span>
+                ₫
+            </div>
+            <div style="display:flex;">
+                <div class="cart-cartactions text-center">Xem giỏ hàng</div>
+                <div class="cart-cartactions text-center">Thanh toán</div>
+            </div>
+        </div>
+        <!-- ===== Favourite ==== -->
+        <div class="fav-container ">
+            <p class="text-center cart-heading">Sản phẩm yêu thích</p>
+            <div class="fav-products">
+                <div class="l-3 m-4 c-5">
+                    <div class="fav-item" style="background-image: url(img/product/conan1.jpg);"></div>
+                </div>
+
+                <div class="l-3 m-4 c-5">
+                    <div class="fav-item" style="background-image: url(img/product/conan1.jpg);"></div>
+                </div>
+
+                <div class="l-3 m-4 c-5">
+                    <div class="fav-item" style="background-image: url(img/product/conan1.jpg);"></div>
+                </div>
+
+                <div class="l-3 m-4 c-5">
+                    <div class="fav-item" style="background-image: url(img/product/conan1.jpg);"></div>
+                </div>
+
+                <div class="l-3">
+                    <div class="fav-item" style="background-image: url(img/product/conan1.jpg);"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== Thong bao =====  -->
+        <div class="cart-container" id="notice-container">
+            <i class="close-cart fa-solid fa-xmark"></i>
+            <p class="text-center cart-heading">Thông báo</p>
+            <p class="text-center" style="margin-top: 20%;">Bạn chưa có thông báo nào.</p>
+            <div id="cart-products">
+                <div></div>
+            </div>
+            
+        </div>
+
+        <!-- ================== CONTENT ================== -->
+        <div class="grid wide main-content">
+            <div class="breadcrumb" style="display: block;">
+                <a href="/product.html" class="breadcrumb-pre">Sản phẩm</a>
+                <span>/</span>
+                <p class="breadcrumb-cur">Thám tử lừng danh Conan và Tổ chức áo đen</p>
+            </div>
+            <!-- ======= Main book ========= -->
+            <div class="row main-book">
+                <div class="col l-4 m-4 c-12" >
+                    <div class="book-img" style="background-image: url(/img/product/conan1.jpg);"></div>
+                </div>
+                <div class="col l-8 m-8 c-12 book-text">
+                    <h2 class="book-name">Thám tử lừng danh Conan và Tổ chức áo đen 3</h2>
+                    <div class="book-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span> | </span>
+                        <span class="book-daban">2 đánh giá</span>
+                        <span> | </span>
+                        <span class="book-daban">Đã bán: 5</span>
+                    </div>
+                    <div class="book-price">
+                        <p class="book-price-new">67.500<span>₫</span></p>
+                        <p class="book-price-old">75,000<span>₫</span></p>
+                        <p class="book-price-save">(Bạn đã tiết kiệm được 7,500₫)</p> 
+                    </div>
+                    <ul class="book-infor">
+                        <li>Mã sách: <span>0222066-01</span></li>
+                        <li>Tác giả: <span>Gosho Aoyama</span></li>
+                        <li>Đối tượng: <span>Thiếu niên (11 - 15)</span></li>
+                        <li>Khuôn khổ: 13x18 cm</li>
+                        <li>Số trang: 512</li>
+                        <li>Định dạng: bìa mềm</li>
+                        <li>Trọng lượng: 440 gram</li>
+                    </ul>
+                    <div class="buttons_added">
+                        <p>Số lượng: </p>
+                        <input class="minus is-form" type="button" value="-">
+                        <input aria-label="quantity" class="input-qty" max="15" min="1" name="" type="number" value="1">
+                        <input class="plus is-form" type="button" value="+">
+                      </div>
+                    <div class="book-buy">
+                        <a href="#"><i class="fa-regular fa-heart"></i></a>
+                        <a class="book-buy-cart">Thêm vào giỏ hàng</a>
+                        <a class="book-buy-pay">Mua ngay</a>
+                    </div>
+                </div>
+            </div>
+            <!-- ============== Mo ta ============== -->
+            <div class="book-describe space-section">
+                <h3 class="describe-heading">Mô tả</h3>
+                <p>Đặc vụ tình báo CIA, Rena MIZUNASHI = Kir đã thành công thâm nhập lại vào Tổ chức Áo đen nhờ cái chết của đặc vụ FBI Shuichi AKAI! Chưa hết, cô còn tiết lộ thông tin thành viên mới của tổ chức đã bắt đầu hành động!
+                Kẻ này rất giỏi điều tra, thu nhập thông tin cùng năng lực quan sát và phán đoán nhanh nhạy, bí danh của hắn là “Bourbon”!! Mục tiêu của “Bourbon” là Sherry hay chính là Ai HAIBARA…! Mời các bạn đón đọc tập 3 của tuyển tập những trận chiến căng thẳng giữa Conan và Tổ chức Áo đen!!</p>
+                <p>Sách Tặng Kèm Postcard cho bản in đầu tiên</p>
+            </div>
+        </div>
+
+
+        <!-- Ket thuc Main Content -->
+
+
+
+    <!-- ==== NAV Mobile ====  -->
+    <div class="modal-z10 nav-more">
+        <div class="container-nav-more text-center">
+            <ul>
+                <li><a href="#home">Trang chủ</a>
+                <li><a href="#about">Giới thiệu</a></li>
+                <li><a href="#featured">Sản phẩm</a></li>
+                <li><a href="#contacts">Contact</a></li>
+            </ul>
+            <div class="close-nav-more">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+    </div>
+
+     <!-- ==== Sign In ====  -->
+     <div class="modal-z10" id="modal-signin">
+        <div class="modal-container">
+            <form action="" id="signin">
+                <h1 class="text-center">Sign in</h1>
+                <div class="input-control">
+                    <label for="username">Tên đăng nhập:</label>
+                    <input type="text" placeholder="Enter your user name" name="username" id="username">
+                    <small class="error-message"></small>
+                </div>
+
+                <div class="input-control">
+                    <label for="password">Mật khẩu:</label>
+                    <input type="password" placeholder="Enter your password" name="password" id="password">
+                    <small class="error-message"></small>
+                </div>
+
+                <button type="submit" name="btn_submit" id="btn-submit">Sign in</button>
+                <a href="#">Quên mật khẩu?</a>
+                <a href="#" id="btn-create">Đăng kí tài khoản mới.</a>
+            </form>
+
+            <div class="modal-close">
+                <i class="fa-solid fa-xmark" id="modal-close"></i>
+            </div>
+        </div>
+    </div>
+    <!-- ==== Register ====  -->
+    <div class="modal-z10" id="modal-register">
+        <div class="modal-container">
+            <form action="" id="resgister">
+                <h1 class="text-center">Register</h1>
+                <div class="input-control">
+                    <label for="username">Tên đăng nhập:</label>
+                    <input id="username2" type="text" placeholder="Enter your user name" name="username">
+                    <small class="error-message"></small>
+                </div>
+                <div class="input-control">
+                    <label for="email">Email:</label> 
+                    <input id="email" type="email" placeholder="Enter your email" name="email">
+                    <small class="error-message"></small>
+                </div>
+                <div class="input-control">
+                    <label for="password">Mật khẩu:</label>
+                    <input id="password2" type="password" placeholder="Enter your password" name="password">
+                    <small class="error-message"></small>
+                </div>
+                <div class="input-control">
+                    <label for="password2">Nhập lại mật khẩu</label>
+                    <input id="cfpassword2" type="password" placeholder="Confirm Your Password" name="password2">
+                    <small class="error-message"></small>
+                </div>
+                <button type="submit">Register</button>
+            </form>
+
+            <div class="modal-close">
+                <i class="fa-solid fa-xmark" id="modal-close"></i>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Popup -->
+    <div class="popup-container">
+        <div class="popup">
+                <i class="fa-solid fa-circle-check"></i>
+                <p>Thêm vào giỏ hàng thành công</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==== Footer ===== -->
+    <div class="grid wide row footer" id="contacts">
+        <ul class="l-3 m-6 c-12 footer-item">
+            <h3 class="footer-item-heading">Dịch vụ</h3>
+            <li><a href="">Điều khoản sử dụng</a></li>
+            <li><a href="">Chính sách bảo mật</a></li>
+            <li><a href="">Liên hệ</a></li>
+            <li><a href="">Hệ thống nhà sách</a></li>
+            <li><a href="">Tra cứu đơn hàng</a></li>
+        </ul>
+        <ul class="l-3 m-6 c-12 footer-item">
+            <li><h3 class="footer-item-heading">Hỗ trợ</h3></li>
+            <li><a href="">Hướng dẫn đặt hàng</a></li>
+            <li><a href="">Chính sách đổi trả - hoàn tiền</a></li>
+            <li><a href="">Phương thức vận chuyển</a></li>
+            <li><a href="">Phương thức thanh toán</a></li>
+            <li><a href="">Chính sách khách hàng mua sỉ</a></li>
+            <li><a href="">Chính sách khách hàng cho trường học</a></li>
+        </ul>
+        <ul class="l-3 m-6 c-12 footer-item">
+            <li><h3 class="footer-item-heading">Hệ thống nhà sách</h3></li>
+            <li><a href="">Giám đốc: Hoàng Đình Vinh</a></li>
+            <li><a href="">Địa chỉ: Số 55 Giải Phóng, Đồng Tâm, Hai Bà Trưng, Hà Nội</a></li>
+            <li><a href="">Số điện thoại: (+84) 19001234</a></li>
+            <li><a href="">Email: vinh0222066@nuce.edu.vn</a></li>
+        </ul>
+
+        <ul class="l-3 m-6 c-12 footer-item">
+            <li><h3 class="footer-item-heading">Kết nối mạng xã hội</h3></li>
+            <li><a href=""><i class="fa-brands fa-facebook"></i>HUCE Books</a></li>
+            <li><a href=""><i class="fa-brands fa-youtube"></i>Our Books</a></li>
+            <li><a href=""><i class="fa-brands fa-instagram"></i>@ourbooks_2022</a></li>
+            <li><a href=""><i class="fa-brands fa-tiktok"></i>We love reading Books</a></li>
+        </ul>
+    <!-- Ket thuc Footer -->
+    </div>
+    <p class="text-center footer-ending">COPYRIGHTS © 2022 BY 66CS1</p>
+
+
+    <!-- ==== Font awesome ==== -->
+    <script src="https://kit.fontawesome.com/171c3230ad.js" crossorigin="anonymous"></script>
+    <!-- ==== Main JS ==== -->
+    <script src="/js/main.js"></script>
+    <script src="/js/user.js"></script>
+    <script src="/js/cart.js"></script>
+    <script src="/js/quantity.js"></script>
+</body>
+</html>

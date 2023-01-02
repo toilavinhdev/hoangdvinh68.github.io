@@ -1,0 +1,210 @@
+@import url(main.css);
+@import url(product.css);
+
+:root {
+    --main-color: #ff702a;
+    --text-color: #ffffff;
+    --text-color-o : rgba(255, 255, 255, 0.6);
+    --black: #444;
+    --bg-color: #1e1c2a;
+    --bg-color-o: rgba(30, 28, 42, 0.2);
+    --item-color: #FAEBD8;
+    --shadow: 0 0 12px black;
+}
+
+/* ===== Breadcrumb ==== */
+.breadcrumb {
+    margin: 24px 0;
+}
+
+.breadcrumb span {
+    color: var(--text-color);
+}
+
+.breadcrumb-pre {
+    color: var(--main-color);
+}
+
+.breadcrumb-cur {
+    color: var(--text-color-o);
+    display: inline-block;
+}
+
+/* ===== Main Book ==== */
+.main-book {
+    background-color: var(--item-color);
+    padding: 30px 40px;
+    border-radius: 12px;
+    margin-bottom: 60px;
+}
+
+.book-img {
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.book-text {
+    padding-left: 50px;
+}
+
+.book-name {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.book-rate {
+    border-bottom: 1px solid var(--bg-color-o);
+    padding-bottom: 16px;
+    margin-bottom: 12px;
+}
+
+.book-rate i {
+    color: var(--main-color);
+}
+
+.book-price {
+    border-bottom: 1px solid var(--bg-color-o);
+    margin-bottom: 32px;
+    padding-bottom: 12px;
+}
+
+.book-price p {
+    display: inline-block;
+}
+
+.book-price-new,
+.book-price-old {
+    font-size: 32px;
+    font-weight: 600;
+    margin-right: 24px;
+}
+
+.book-price-new {
+    color: var(--main-color);
+}
+
+.book-price-old {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.book-infor {
+
+}
+
+.book-infor li {
+    margin: 6px 0;
+}
+
+.book-infor li span {
+    color: var(--bg-color);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.book-buy {
+    margin: 16px 0;
+}
+
+.buttons_added p {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 12px;
+}
+
+.buttons_added {
+    opacity:1;
+    display:inline-block;
+    display:-ms-inline-flexbox;
+    display:inline-flex;
+    white-space:nowrap;
+    vertical-align:top;
+}
+.is-form {
+    overflow:hidden;
+    position:relative;
+    background-color:#f9f9f9;
+    height:36px;
+    width:28px;
+    padding:0;
+    text-shadow:1px 1px 1px #fff;
+    border:1px solid #ddd;
+}
+.is-form:focus,.input-text:focus {
+    outline:none;
+}
+.is-form.minus {
+    border-radius: 4px 0 0 4px;
+    cursor: pointer;
+}
+.is-form.plus {
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+.input-qty {
+    background-color:#fff;
+    height: 36px;
+    text-align:center;
+    font-size: 16px;
+    display:inline-block;
+    vertical-align:top;
+    margin:0;
+    border-top:1px solid #ddd;
+    border-bottom:1px solid #ddd;
+    border-left:0;
+    border-right:0;
+    padding:0;
+}
+.input-qty::-webkit-outer-spin-button,.input-qty::-webkit-inner-spin-button {
+    -webkit-appearance:none;
+    margin:0;
+}
+
+.book-buy a {
+    display: inline-block;
+    cursor: pointer;
+    background-color: var(--main-color);
+    padding: 10px 24px;
+    border-radius: 6px;
+    margin-right: 12px;
+    margin-bottom: 12px;
+}
+
+.book-buy a i {
+    color: var(--bg-color);
+}
+
+
+/* ===== Book descibe ==== */
+.book-describe {
+    background-color: var(--item-color);
+    border-radius: 12px;
+}
+
+.describe-heading {
+    background-color: var(--main-color);
+    border-radius: 12px 12px 0 0;
+    padding: 6px 12px;
+    text-transform: uppercase;
+}
+
+.book-describe p {
+    margin: 12px;
+    padding: 24px 0;
+}
+
+@media (max-width: 740px) {
+    .book-name {
+        margin-top: 30px;
+    }
+
+    .breadcrumb,
+    .book-main {
+        margin-left: 8px;
+    }
+    .book-text {
+        padding-left: 0;
+    }
+}
