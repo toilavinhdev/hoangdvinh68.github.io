@@ -1,4 +1,4 @@
-- Tên nhóm: Nhóm 2
+## HUCE Book
 - Thành viên: Hoàng Đình Vinh (MSSV: 0222066)
 - Tên sản phẩm: HUCE Books
 - Mô tả: 
@@ -7,4 +7,6 @@
     + Sản phẩm yêu thích
     + Validate login
     + Responsive
+
+-> :)) sản phẩm dời đầu, xem code trông cười vl
     
